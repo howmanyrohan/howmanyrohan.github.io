@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home | ROHAN</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+    <div class="intro">
+        <h1>&lt ROHAN &gt</ROHAN></h1>
+        
+        <img src="img/Rohan.jpg" alt="Rohan">
+        <div class="DateTime">
+            <!--<button id="DateTime">Date | Time</button>-->
+            <p id="DateTimeDisplay"> 
+                <span id="WeekDay"></span>
+                <br>
+                <span id="Day"></span>
+                <span id="Month"></span>
+                <span id="Year"></span>
+                <br>
+                <span id="Hours"></span>
+                <span id="Minutes"></span>
+                <span id="Seconds"></span>
+            </p>
+        </div>
+    </div>
+
+    <br>
+ 
+
+    
+    <div id="main">
+        <div id="projects" class="bubble">
+            <h1>PROJECTS</h1>
+            <div id="ndhu-simulator" class="bubble-content">
+                <h2>NDHU Simulator 
+                    <a href="https://github.com/Shadow0Night0/NDHUv1.4" target="_blank"><img src="img/github-logo.png"> </a>
+                </h2>
+                <h3>3D Game Simulation of the National Dong Hwa University Campus</h3>
+                <h4>
+                    A 3D model of the entire campus with a player character to control like a 3D game. 
+                    Made with intentions of familiarizing international students with the big campus of NDHU in a fun and interactive way.
+                </h4>
+            </div>
+    
+            <div id="avalon-app" class="bubble-content">
+                <h2>Avalon App</h2>
+                <h3>Mobile version of the board game Avalon</h3>
+                <h4>
+                    An application used to play the board game Avalon and replace the need of the physical board game itself. 
+                </h4>
+            </div>
+        </div>
+    
+        
+    
+        <div id="education" class="bubble">
+            <h1>EDUCATION</h1>
+            <div id="ndhu" class="bubble-content">  
+                <h2>National Dong Hwa University, Taiwan 
+                    <a href="https://www.ndhu.edu.tw/?Lang=en" target="_blank"><img src="img/ndhu-logo.png"> </a>
+                </h2>
+                <h3>Bachelor</h3>
+                <h4>Computer Science and Information Engineering</h4>
+                <h5>September 2018 - July 2022</h5>
+            </div>
+    
+            <div id="huahin-school" class="bubble-content">
+                <h2>Huahin School, Huahin, Thailand
+                    <a href="https://huahin.ac.th/" target="_blank"><img src="img/huahin-school-logo.png"> </a>
+                </h2>
+                <h3>Senior High School</h3>
+                <h4>English and Mathematics  Major</h4>
+                <h5>February 2015 - July 2018</h5>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h1>Contact Me</h1>
+
+        <form action="submit-form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <input type="submit" value="Send">
+          </form>
+                <a href="https://www.linkedin.com/in/rohan-chetri-461677246/" target="_blank">
+                    <img src="img/linkedin.png">
+                    <u>Rohan Chetri</u>
+                </a>
+            
+                <a href="https://github.com/howmanyrohan" target="_blank">
+                    <img src="img/GitHub-Mark-Light-32px.png">
+                    <u>howmanyrohan</u>
+                </a>
+               
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
