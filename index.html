@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROHAN</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="revamped_style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -20,6 +20,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -29,62 +30,154 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="bg-dark text-light text-center py-5">
+    <section id="introduction" class="py-5">
         <div class="container">
-            <img src="img/Rohan.jpg" alt="Rohan" class="rounded-circle mb-4" style="width: 150px; height: 150px;">
-            <h1>Hi, I'm Rohan</h1>
-            <p class="lead">Software Developer</p>
+            <div class="card bg-dark text-light text-center">
+                <div class="card-body">
+                    <div class="card-title">
+                        <img src="img/Rohan.jpg" alt="Rohan" class="rounded-circle mb-4" style="width: 150px; height: 150px;">
+                        <h1>Hi, I'm Rohan</h1>
+                    </div>
+                    <p class="typing">&nbsp;</p>
+                    <div class="cursor"></div>
+                </div>
+            </div>
         </div>
-    </header>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-light mb-4">Experience</h2>
+            <div class="row">
+                <div class="card bg-dark text-light">
+                    <div class="card-body">
+                        <h5 class="card-title">Fissionsoft Co., Ltd.</h5>
+                        <p class="card-text">
+                            Junior Full Stack Developer
+                        </p>
+                        <a href="https://www.fissionsoft.co.th/" class="btn btn-primary" target="_blank"><i class="fa-solid fa-link"></i> View Company Site</a>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Control Room Dashboard (Nanyang)</h5>
+                                    <i class="fa-brands fa-vuejs"></i> Javascript, Vue.js
+                                    <ul class="card-text">
+                                        Fixed programatic and visual bugs <br> Updated various features and functionality
+                                    </ul>
+                                    <i class="fa-brands fa-laravel"></i> PHP, Laravel
+                                    <ul>
+                                        Updated API, fixed data retrieval bugs
+                                    </ul>
+                                    <i class="fa-solid fa-database"></i> PostgreSQL
+                                    <ul>
+                                        Created views for easy data access and manipulation for the server
+                                    </ul>
+                                    <img src="img/Control Room Dashboard.png" class="img-fluid rounded shadow-sm mb-2" alt="Control Room Dashboard Image">
+                                    <a href="https://www.fissionsoft.co.th/software-development/control-room-dashboard/" class="btn btn-primary" target="_blank"><i class="fa-regular fa-bookmark"></i> Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Expert registration system (Thaihealth | สสส)</h5>
+                                    <i class="fa-brands fa-aurelia"></i> Typescript, Aurelia
+                                    <ul class="card-text">
+                                        Created clean frontend client for ease of use make server API calls based on requirement
+                                    </ul>
+                                    <i class="fa-brands fa-net-core"></i> C#, ASP.NET Core
+                                    <ul>
+                                        Created server APIs for CRUD Operations <br>
+                                        API for exporting data in Excel format
+                                    </ul>
+                                    <i class="fa-solid fa-database"></i> Microsoft SQL Server
+                                    <ul>
+                                        Created the database from scratch <br> according to enterprise architect schema
+                                    </ul>
+                                    <img src="img/Thaihealth.png" class="img-fluid rounded shadow-sm mb-2" alt="Control Room Dashboard Image">
+                                    <a href="https://www.fissionsoft.co.th/software-development/control-room-dashboard/" class="btn btn-primary" target="_blank"><i class="fa-regular fa-bookmark"></i> Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Department of Employment (DOE)</h5>
+                                    <i class="fa-brands fa-aurelia"></i> Typescript, Aurelia
+                                    <ul class="card-text">
+                                        Created clean frontend client for ease of use make server API calls based on requirement
+                                    </ul>
+                                    <i class="fa-brands fa-net-core"></i> C#, ASP.NET Core
+                                    <ul>
+                                        Created server APIs for report requests according to filter to send and recieve from JasperReports Server
+                                    </ul>
+                                    <i class="fa-solid fa-file-lines"></i> JasperReports
+                                    <ul>
+                                        Created various reports using JasperReports <br> 
+                                    </ul>
+                                    <i class="fa-solid fa-database"></i> PostgreSQL
+                                    <ul>
+                                        Created the database from scratch <br> according to enterprise architect schema
+                                    </ul>
+                                    <img src="img/doe.png" class="img-fluid rounded shadow-sm mb-2" alt="DOE Image">
+                                    <a href="https://www.doe.go.th/prd/main/" class="btn btn-primary" target="_blank"><i class="fa-regular fa-bookmark"></i> Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Projects Section -->
     <section id="projects" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Projects</h2>
+            <h2 class="text-center text-light mb-4">Projects</h2>
             <div class="row">
-                <div class="card mb-4">
+                <div class="card bg-dark text-light mb-4">
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card mb-2">
-                                    <div class="card-body">
-                                        <div class="mb-2">
-                                            <a href="https://github.com/howmanyrohan/TSCS" target="_blank">
-                                                <img src="img/TSCS Flyer.png" class="img-fluid rounded shadow-sm" alt="TSCS Project Overview Image">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card mb-2">
-                                    <div class="card-body">
-                                        <div class="mb-2">
-                                            <a href="https://github.com/howmanyrohan/TSCS" target="_blank">
-                                                <img src="img/TSCS.jpg" class="img-fluid rounded shadow-sm" alt="TSCS Project Overview Image">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card mb-2">
-                                    <div class="card-body">
-                                        <div class="mb-2">
-                                            <a href="https://github.com/howmanyrohan/TSCS" target="_blank">
-                                                <img src="img/TSCS Logo.jpg" class="img-fluid rounded shadow-sm" alt="TSCS Project Overview Image">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <h5 class="card-title">NDHU Simulator</h5>
                         <p class="card-text">3D Game Simulation of the National Dong Hwa University Campus.</p>
                         <a href="https://github.com/howmanyrohan/TSCS" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                     </div>
+                    
+                    <!--Images-->
+                    <div class="row">
+                        <div class="col-md-4 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a href="https://github.com/howmanyrohan/TSCS" target="_blank">
+                                        <img src="img/TSCS Flyer.png" class="img-fluid rounded shadow-sm" alt="TSCS Project Overview Image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a href="https://github.com/howmanyrohan/TSCS" target="_blank">
+                                        <img src="img/TSCS.jpg" class="img-fluid rounded shadow-sm" alt="TSCS Project Overview Image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a href="https://github.com/howmanyrohan/TSCS" target="_blank">
+                                        <img src="img/TSCS Logo.jpg" class="img-fluid rounded shadow-sm" alt="TSCS Project Overview Image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
+                <div class="card bg-dark text-light">
                     <div class="card-body">
                         <h5 class="card-title">Avalon App</h5>
                         <p class="card-text">Mobile version of the board game Avalon.</p>
@@ -96,29 +189,37 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="py-5 bg-light">
+    <section id="education" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Education</h2>
+            <h2 class="text-center text-light mb-4">Education</h2>
             <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="mb-2">
-                        <a href="https://www.ndhu.edu.tw/?Lang=en" target="_blank">
-                            <img src="img/ndhu-logo.png" class="img-fluid rounded shadow-sm" alt="NDHU Logo" style="width: 50px; height: 50px;">
-                        </a>
+                <div class="col-md-6">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <div class="mb-2">
+                                <a href="https://www.ndhu.edu.tw/?Lang=en" target="_blank">
+                                    <img src="img/ndhu-logo.png" class="img-fluid rounded shadow-sm" alt="NDHU Logo" style="width: 50px; height: 50px;">
+                                </a>
+                            </div>
+                            <h5>National Dong Hwa University, Taiwan</h5>
+                            <p>Bachelor in Computer Science and Information Engineering</p>
+                            <p><small>2018 - 2022</small></p>
+                        </div>
                     </div>
-                    <h5>National Dong Hwa University, Taiwan</h5>
-                    <p>Bachelor in Computer Science and Information Engineering</p>
-                    <p><small>2018 - 2022</small></p>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <div class="mb-2">
-                        <a href="https://huahin.ac.th/" target="_blank">
-                            <img src="img/huahin-school-logo.png" class="img-fluid rounded shadow-sm" alt="Huahin School Logo" style="width: 50px; height: 50px;">
-                        </a>
+                <div class="col-md-6">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <div class="mb-2">
+                                <a href="https://huahin.ac.th/" target="_blank">
+                                    <img src="img/huahin-school-logo.png" class="img-fluid rounded shadow-sm" alt="Huahin School Logo" style="width: 50px; height: 50px;">
+                                </a>
+                            </div>
+                            <h5>Huahin School, Thailand</h5>
+                            <p>Senior High School - English and Mathematics Major</p>
+                            <p><small>2015 - 2018</small></p>
+                        </div>
                     </div>
-                    <h5>Huahin School, Thailand</h5>
-                    <p>Senior High School - English and Mathematics Major</p>
-                    <p><small>2015 - 2018</small></p>
                 </div>
             </div>
         </div>
@@ -127,7 +228,7 @@
     <!-- Contact Section -->
     <section id="contact" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Contact Me</h2>
+            <h2 class="text-center text-light mb-4">Contact Me</h2>
             <form action="submit-form.php" method="POST" class="mx-auto" style="max-width: 600px;">
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
@@ -152,6 +253,7 @@
     </footer>
 
     <!-- Bootstrap Bundle JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

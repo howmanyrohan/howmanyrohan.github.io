@@ -1,14 +1,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-}
-
-header {
-  background: linear-gradient(90deg, #1a73e8, #4285f4);
-}
-
-header h1, header p {
-  color: #fff;
+  background-color:gray;
 }
 
 section {
@@ -35,3 +28,40 @@ section {
   border-radius: 5px; /* Adds a subtle rounded effect */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
 }
+
+.fa-aurelia {
+  width: 15px;
+  height: 15px;
+  background: url('img/aurelia-icon.svg') no-repeat center center;
+  background-size: contain;
+}
+
+.fa-net-core {
+  width: 17px;
+  height: 17px;
+  background: url('img/net-core-icon.svg') no-repeat center center;
+  background-size: contain;
+  filter: grayscale(100%);
+}
+
+.typing-container {
+  display: inline-block;
+}
+.typing {
+  font-size: 24px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.cursor {
+  font-size: 24px;
+  display: inline-block;
+  border-right: 2px solid black;
+  animation: blink 0.7s steps(1) infinite;
+}
+@keyframes blink {
+  50% {
+      border-color: transparent;
+  }
+}
+
