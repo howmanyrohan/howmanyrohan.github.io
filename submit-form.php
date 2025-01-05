@@ -10,5 +10,5 @@ $headers = "From: $email";
 
 mail($to, $subject, $body, $headers);
 
-echo 'Thank you for your message!'; // optional confirmation message
+echo 'Thank you for your message!';
 ?>
